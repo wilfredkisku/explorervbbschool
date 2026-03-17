@@ -1,1 +1,1 @@
-Explorer & V.B.B. School static website. Structure preserved from the original zipped site, content refreshed from the v1 package, and uploaded school logos included in the images folder. Deploy using index.html at repository root on GitHub Pages.
+Static multi-page school website with enhanced homepage sections, hero carousel, logos, and GitHub Pages-ready structure.

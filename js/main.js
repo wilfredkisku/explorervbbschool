@@ -50,3 +50,41 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearTargets = document.querySelectorAll('[data-year]');
   yearTargets.forEach(el => el.textContent = new Date().getFullYear());
 });
+
+
+  const heroCarouselEl = document.getElementById('schoolHeroCarousel');
+  if (heroCarouselEl && window.bootstrap && bootstrap.Carousel) {
+    const heroCarousel = bootstrap.Carousel.getOrCreateInstance(heroCarouselEl, {
+      interval: 4200,
+      ride: 'carousel',
+      touch: true,
+      pause: false,
+      wrap: true
+    });
+    heroCarousel.cycle();
+  }
+
+
+// Rotating event highlight text on homepage
+(function(){
+  const target = document.getElementById('eventHighlightText');
+  if (!target) return;
+  const items = [
+    'Admissions open for the new academic session.',
+    'Annual day rehearsals and cultural showcase this month.',
+    'Science and innovation activities for curious young learners.',
+    'Parent interaction and campus visit support available this week.'
+  ];
+  let idx = 0;
+  target.classList.add('fade-in');
+  setInterval(() => {
+    target.classList.remove('fade-in');
+    target.classList.add('fade-out');
+    setTimeout(() => {
+      idx = (idx + 1) % items.length;
+      target.textContent = items[idx];
+      target.classList.remove('fade-out');
+      target.classList.add('fade-in');
+    }, 300);
+  }, 3200);
+})();
