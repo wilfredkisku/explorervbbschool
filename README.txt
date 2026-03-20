@@ -1,1 +1,5 @@
-Static multi-page school website with enhanced homepage sections, hero carousel, logos, and GitHub Pages-ready structure.
+Static school website template
+Root: index.html
+Inner pages: /pages/
+Assets: /css /js /images
+Ready for GitHub Pages

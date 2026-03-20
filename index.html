@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Explorer & V.B.B. School | Home</title>
-  <meta name="description" content="Explorer & V.B.B. School static website" />
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <meta name="description" content="A polished school website template built with Bootstrap and JavaScript.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <div class="topbar py-2 d-none d-lg-block">
     <div class="container d-flex justify-content-between align-items-center small">
-      <div class="d-flex gap-4">
-        <span><i class="bi bi-geo-alt"></i> Adarsh Nagar, Behind Thakor Dwar Society, Sayan, Surat, Gujarat, India</span>
+      <div class="d-flex gap-4 flex-wrap">
+        <span><i class="bi bi-geo-alt"></i> Adarsh Nagar, Behind Thakor Dwar Society, Sayan, Surat, Gujarat</span>
         <span><i class="bi bi-telephone"></i> +91 9762330236</span>
         <span><i class="bi bi-envelope"></i> info@explorervbbschool.in</span>
       </div>
       <div class="d-flex gap-3">
         <a href="pages/admissions.html">Admissions</a>
         <a href="pages/contact.html">Visit Us</a>
-        <a href="https://explorervbbschool.in" target="_blank" rel="noopener">Official Site</a>
+        <a href="pages/news.html">News</a>
       </div>
     </div>
   </div>
-
   <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" alt="V.B.B. High School logo" class="brand-logo me-2">
-        <span>
-          <strong>Explorer &amp; V.B.B.</strong><br>
-          <small>School, Sayan</small>
-        </span>
+        <img src="images/logo.png" alt="School logo" class="brand-logo">
+        <span><strong>Explorer &amp; V.B.B. School</strong><small>Inspiring learning every day</small></span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="pages/academics.html">Academics</a></li>
           <li class="nav-item"><a class="nav-link" href="pages/activities.html">Activities</a></li>
           <li class="nav-item"><a class="nav-link" href="pages/gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/news.html">News</a></li>
           <li class="nav-item"><a class="nav-link" href="pages/admissions.html">Admissions</a></li>
           <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
           <li class="nav-item ms-lg-2"><a class="btn btn-brand rounded-pill px-4" href="pages/admissions.html">Enquire Now</a></li>
@@ -56,392 +52,255 @@
     </div>
   </nav>
 
-  <header class="hero-section hero-carousel-section position-relative overflow-hidden">
-    <div id="schoolHeroCarousel" class="carousel slide hero-carousel hero-carousel-fullwidth" data-bs-ride="carousel" data-bs-interval="4200" data-bs-touch="true" data-bs-pause="false" data-bs-wrap="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/carousel-1.jpg" class="d-block w-100" alt="School campus sample image">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-caption hero-caption-wide text-start">
-            <span class="hero-chip">Campus Welcome</span>
-            <h1 class="display-4 fw-bold">Explorer &amp; V.B.B. School</h1>
-            <p>A nurturing school environment where young minds learn, grow and lead with confidence.</p>
-            <div class="d-flex flex-wrap gap-3 mt-3">
-              <a href="pages/about.html" class="btn btn-brand btn-lg rounded-pill px-4">Know the School</a>
-              <a href="pages/admissions.html" class="btn btn-light btn-lg rounded-pill px-4 border-0">Admissions</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/carousel-2.jpg" class="d-block w-100" alt="Classroom sample image">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-caption hero-caption-wide text-start">
-            <span class="hero-chip">Classroom Life</span>
-            <h2>Engaging learning atmosphere</h2>
-            <p>Built with a smooth swiping motion so the homepage feels more modern, cinematic and client-ready.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/carousel-3.jpg" class="d-block w-100" alt="Sports sample image">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-caption hero-caption-wide text-start">
-            <span class="hero-chip">Sports &amp; Activities</span>
-            <h2>Balanced student development</h2>
-            <p>A strong school homepage should show academics, co-curricular life and student energy together.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/carousel-4.jpg" class="d-block w-100" alt="Events sample image">
-          <div class="carousel-overlay"></div>
-          <div class="carousel-caption hero-caption-wide text-start">
-            <span class="hero-chip">Events &amp; Culture</span>
-            <h2>Community, celebration and achievement</h2>
-            <p>Ready to swap the test images with real school photos later without changing the structure.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
-    <div class="hero-summary-band">
-      <div class="container py-4 py-lg-5">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-7">
-            <span class="badge-soft mb-3">Explorer &amp; V.B.B. English Medium School</span>
-            <div class="hero-summary-content">
-              <div class="hero-summary-brand d-flex align-items-center gap-3 mb-3">
-                <img src="images/logo.png" alt="School logo" class="hero-logo mb-0 flex-shrink-0">
-                <div>
-                  <h2 class="mb-2">A beautiful, welcoming digital first impression for parents and students.</h2>
-                  <p class="text-muted mb-0">The homepage now uses a full-width visual carousel while the rest of the multi-page website structure stays the same.</p>
-                </div>
-              </div>
-              <div class="event-highlight-bar" aria-live="polite">
-                <span class="event-highlight-label"><i class="bi bi-stars"></i> Featured now</span>
-                <span class="event-highlight-text" id="eventHighlightText">Admissions open for the new academic session.</span>
-              </div>
-            </div>
+<header>
+  <div id="schoolHeroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-touch="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active position-relative">
+        <img src="images/hero-1.jpg" alt="School welcome banner">
+        <div class="carousel-caption">
+          <span class="hero-kicker">Welcome</span>
+          <h1 class="hero-title text-white">A structured, elegant school website that makes a powerful first impression.</h1>
+          <p class="hero-text">Built using the uploaded carousel, jumbotron, album, blog and product-style components, reimagined for a complete school website.</p>
+          <div class="hero-actions">
+            <a class="btn btn-brand btn-lg rounded-pill px-4" href="pages/admissions.html">Start Admission Enquiry</a>
+            <a class="btn btn-light btn-lg rounded-pill px-4" href="pages/about.html">Discover the School</a>
           </div>
-          <div class="col-lg-5">
-            <div class="hero-metrics row g-3 mt-0">
-              <div class="col-4"><div class="metric-card"><h3 class="counter" data-target="600">0</h3><p>Current enrollments</p></div></div>
-              <div class="col-4"><div class="metric-card"><h3 class="counter" data-target="40">0</h3><p>Dedicated staff</p></div></div>
-              <div class="col-4"><div class="metric-card"><h3 class="counter" data-target="20">0</h3><p>Clubs &amp; activities</p></div></div>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div class="carousel-item position-relative">
+        <img src="images/hero-2.jpg" alt="Academic excellence banner">
+        <div class="carousel-caption">
+          <span class="hero-kicker">Academics</span>
+          <h2 class="hero-title text-white">Strong foundations, modern classrooms and a culture of curiosity.</h2>
+          <p class="hero-text">A calm, parent-friendly experience with clear academic pathways and essential school information.</p>
+        </div>
+      </div>
+      <div class="carousel-item position-relative">
+        <img src="images/hero-3.jpg" alt="Activities banner">
+        <div class="carousel-caption">
+          <span class="hero-kicker">Student Life</span>
+          <h2 class="hero-title text-white">Every child gets room to participate, perform, play and shine.</h2>
+          <p class="hero-text">Sports, arts, clubs and events are presented as core parts of school life.</p>
+        </div>
+      </div>
+      <div class="carousel-item position-relative">
+        <img src="images/hero-4.jpg" alt="Community banner">
+        <div class="carousel-caption">
+          <span class="hero-kicker">Community</span>
+          <h2 class="hero-title text-white">A digital campus window for parents, students and visitors.</h2>
+          <p class="hero-text">Easy to deploy, easy to customize and well structured for a client-ready presentation.</p>
         </div>
       </div>
     </div>
-  </header>
+    <button class="carousel-control-prev" type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#schoolHeroCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+  </div>
+</header>
 
-  <section class="section-padding bg-white pt-5 pb-4">
+<div class="hero-badgebar">
+  <div class="container">
+    <div class="info-strip">
+      <div class="row g-2 align-items-center">
+        <div class="col-md-4"><div class="item"><i class="bi bi-mortarboard"></i><div><h6>Academically structured</h6><p>Clear stages, subject focus and parent-ready information.</p></div></div></div>
+        <div class="col-md-4"><div class="item"><i class="bi bi-stars"></i><div><h6>Event highlight</h6><p><span class="highlight-text" data-highlight-rotator data-items='["Admissions open for the new session","Inter-house activities this month","Parent orientation and campus visits","Student showcase and annual celebration"]'>Admissions open for the new session</span></p></div></div></div>
+        <div class="col-md-4"><div class="item"><i class="bi bi-geo-alt"></i><div><h6>Visit & connect</h6><p>Easy contact, enquiry and campus information.</p></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section-space bg-soft">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Why this structure works</span>
+      <h2 class="display-title">The essential school website sections parents expect, arranged in a clear visual flow.</h2>
+      <p class="lead-copy">This homepage blends carousel storytelling, jumbotron-style calls to action, product-style academic cards, album-inspired galleries and blog-inspired updates.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-3"><div class="feature-card h-100"><div class="icon-pill"><i class="bi bi-building"></i></div><h5 class="mt-4">A welcoming first impression</h5><p>The homepage introduces the school with a full-width visual banner, strong messaging and quick actions.</p></div></div>
+      <div class="col-md-6 col-xl-3"><div class="feature-card h-100"><div class="icon-pill"><i class="bi bi-journal-text"></i></div><h5 class="mt-4">Clear academics</h5><p>Families can quickly understand stages, subjects, co-curricular balance and the overall learning approach.</p></div></div>
+      <div class="col-md-6 col-xl-3"><div class="feature-card h-100"><div class="icon-pill"><i class="bi bi-calendar-event"></i></div><h5 class="mt-4">Useful updates</h5><p>Notice, events and news sections help the website feel active and informative instead of static.</p></div></div>
+      <div class="col-md-6 col-xl-3"><div class="feature-card h-100"><div class="icon-pill"><i class="bi bi-people"></i></div><h5 class="mt-4">Parent confidence</h5><p>Structured admissions, contact and leadership pages answer the most important visitor questions.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container">
+    <div class="jumbo-box">
+      <div class="row align-items-center g-4 position-relative" style="z-index:1;">
+        <div class="col-lg-8">
+          <span class="eyebrow text-white">School welcome message</span>
+          <h2 class="display-title text-white">Learning begins with belonging, confidence and thoughtful guidance.</h2>
+          <p class="hero-text mb-0">This section is inspired by the uploaded jumbotron template and turned into a premium school welcome block for principals, management teams or admission campaigns.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="pages/admissions.html" class="btn btn-light rounded-pill px-4 me-2">Admissions</a>
+          <a href="pages/contact.html" class="btn btn-outline-light rounded-pill px-4">Visit Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space bg-soft">
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="notice-board h-100">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+            <div>
+              <span class="eyebrow">Notice & circulars</span>
+              <h2 class="display-title fs-2 mb-0">Important information for families</h2>
+            </div>
+            <a href="pages/news.html" class="btn btn-outline-brand rounded-pill btn-sm">All updates</a>
+          </div>
+          <div class="notice-item"><div class="notice-date"><strong>15</strong><span>APR</span></div><div><h6>Parent orientation session</h6><p>An opening session to introduce the school approach, classroom routines and family support systems.</p></div></div>
+          <div class="notice-item"><div class="notice-date"><strong>21</strong><span>APR</span></div><div><h6>Admissions help desk</h6><p>Guidance on documents, age criteria, eligibility and a smooth campus visit experience.</p></div></div>
+          <div class="notice-item"><div class="notice-date"><strong>27</strong><span>APR</span></div><div><h6>Activity showcase week</h6><p>A week dedicated to sports, music, house presentations and student-led displays.</p></div></div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="calendar-panel h-100">
+          <span class="eyebrow">Upcoming calendar</span>
+          <h3 class="fs-2 fw-bold">What is coming up next</h3>
+          <ul class="calendar-list mt-3">
+            <li><span>Week 1</span><strong>Admission counselling and campus visits</strong></li>
+            <li><span>Week 2</span><strong>Foundational learning readiness activities</strong></li>
+            <li><span>Week 3</span><strong>Inter-house sports and team building</strong></li>
+            <li><span>Week 4</span><strong>Creative arts showcase and family interaction</strong></li>
+          </ul>
+          <a href="pages/contact.html" class="btn btn-brand rounded-pill px-4 mt-3">Book a visit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container">
+    <div class="section-heading left">
+      <span class="eyebrow">Academic journey</span>
+      <h2 class="display-title">Product-style cards adapted for school programmes</h2>
+      <p class="lead-copy">This section draws from the uploaded product template and turns it into a clean showcase of academic pathways.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-3"><div class="program-card h-100"><img src="images/gallery-1.jpg" alt="Early years"><div class="card-body"><span class="program-tag">Foundational</span><h5>Early Years</h5><p>Warm, joyful learning through stories, play, numeracy readiness and guided communication.</p><a href="pages/academics.html" class="fw-bold text-primary">Explore stage <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-md-6 col-xl-3"><div class="program-card h-100"><img src="images/gallery-2.jpg" alt="Primary"><div class="card-body"><span class="program-tag">Primary</span><h5>Primary School</h5><p>Language, mathematics, science and value-based growth delivered through active classroom experiences.</p><a href="pages/academics.html" class="fw-bold text-primary">Explore stage <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-md-6 col-xl-3"><div class="program-card h-100"><img src="images/gallery-3.jpg" alt="Middle school"><div class="card-body"><span class="program-tag">Middle Years</span><h5>Middle School</h5><p>Stronger subject depth, project work, public speaking and collaborative problem solving.</p><a href="pages/academics.html" class="fw-bold text-primary">Explore stage <i class="bi bi-arrow-right"></i></a></div></div></div>
+      <div class="col-md-6 col-xl-3"><div class="program-card h-100"><img src="images/gallery-4.jpg" alt="Secondary"><div class="card-body"><span class="program-tag">Senior Focus</span><h5>Senior Preparation</h5><p>Academic rigour, confidence building and future readiness supported by mentoring and discipline.</p><a href="pages/academics.html" class="fw-bold text-primary">Explore stage <i class="bi bi-arrow-right"></i></a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space bg-soft">
+  <div class="container">
+    <div class="row g-4 align-items-center mb-4">
+      <div class="col-lg-7">
+        <span class="eyebrow">Snapshot</span>
+        <h2 class="display-title">A school experience built around growth, visibility and trust.</h2>
+      </div>
+      <div class="col-lg-5 text-lg-end"><a href="pages/gallery.html" class="btn btn-outline-brand rounded-pill px-4">View gallery</a></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-lg-3"><div class="stats-card h-100"><h3 class="counter" data-target="600">0</h3><p class="mb-0 text-muted-2">Students reached</p></div></div>
+      <div class="col-6 col-lg-3"><div class="stats-card h-100"><h3 class="counter" data-target="40">0</h3><p class="mb-0 text-muted-2">Faculty and staff</p></div></div>
+      <div class="col-6 col-lg-3"><div class="stats-card h-100"><h3 class="counter" data-target="18">0</h3><p class="mb-0 text-muted-2">Clubs and activities</p></div></div>
+      <div class="col-6 col-lg-3"><div class="stats-card h-100"><h3 class="counter" data-target="12">0</h3><p class="mb-0 text-muted-2">Signature events</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Album-style gallery</span>
+      <h2 class="display-title">A visual section that can later be replaced with real school photographs.</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-card"><img src="images/gallery-1.jpg" alt="Gallery image 1"></div>
+      <div class="gallery-card"><img src="images/gallery-2.jpg" alt="Gallery image 2"></div>
+      <div class="gallery-card"><img src="images/gallery-3.jpg" alt="Gallery image 3"></div>
+      <div class="gallery-card"><img src="images/gallery-4.jpg" alt="Gallery image 4"></div>
+      <div class="gallery-card"><img src="images/gallery-5.jpg" alt="Gallery image 5"></div>
+      <div class="gallery-card"><img src="images/gallery-6.jpg" alt="Gallery image 6"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-space bg-soft">
+  <div class="container testimonial-wrap">
+    <div class="section-heading mb-4">
+      <span class="eyebrow text-white">Testimonials</span>
+      <h2 class="display-title text-white">Designed to build confidence with parents and visitors.</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4"><div class="testimonial-card h-100"><p>“The homepage feels warm and professional. It immediately tells families what the school stands for.”</p><span>Parent voice</span></div></div>
+      <div class="col-lg-4"><div class="testimonial-card h-100"><p>“The structure is clear. Admissions, academics, updates and contact details are all easy to find.”</p><span>Prospective family</span></div></div>
+      <div class="col-lg-4"><div class="testimonial-card h-100"><p>“The design gives enough room for real photos, school news and achievements without feeling crowded.”</p><span>School communication team</span></div></div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer pt-5 pb-4 mt-5">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <div class="info-hub-card h-100">
-            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
-              <div>
-                <span class="eyebrow">Notice &amp; circulars</span>
-                <h2 class="mb-0 h1-sm">Important updates for parents</h2>
-              </div>
-              <a href="pages/contact.html" class="btn btn-outline-dark rounded-pill btn-sm">Contact office</a>
-            </div>
-            <div class="notice-list">
-              <div class="notice-item">
-                <div class="notice-date"><strong>15</strong><span>APR</span></div>
-                <div>
-                  <h5>Academic orientation for parents</h5>
-                  <p>A dedicated introductory session for families to understand the academic calendar, classroom expectations and school support systems.</p>
-                </div>
-              </div>
-              <div class="notice-item">
-                <div class="notice-date"><strong>20</strong><span>APR</span></div>
-                <div>
-                  <h5>New admissions help desk</h5>
-                  <p>An admissions support window for campus visits, counselling and guidance on the school admission process.</p>
-                </div>
-              </div>
-              <div class="notice-item">
-                <div class="notice-date"><strong>28</strong><span>APR</span></div>
-                <div>
-                  <h5>Student activity showcase week</h5>
-                  <p>A schoolwide display of student expression across art, speaking, sports, classroom projects and cultural participation.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="calendar-panel h-100">
-            <span class="eyebrow">Calendar</span>
-            <h3 class="mb-3">Upcoming school highlights</h3>
-            <ul class="calendar-list">
-              <li><span>22 Apr</span><strong>Foundational literacy celebration</strong></li>
-              <li><span>26 Apr</span><strong>Inter-house sports practice</strong></li>
-              <li><span>30 Apr</span><strong>Science and discovery day</strong></li>
-              <li><span>03 May</span><strong>Public speaking circle</strong></li>
-              <li><span>10 May</span><strong>Parent interaction morning</strong></li>
-            </ul>
-            <div class="calendar-badge">
-              <i class="bi bi-calendar-event"></i>
-              <div>
-                <strong>Static website note</strong>
-                <p class="mb-0">These are editable demo entries, ready to be replaced with real school dates later.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding bg-light-subtle">
-    <div class="container">
-      <div class="section-heading text-center mx-auto mb-5">
-        <span class="eyebrow">The school experience</span>
-        <h2>Capabilities nurtured through a balanced approach</h2>
-        <p class="text-muted">This section brings in the richer, more aspirational “school experience” feel often seen on leading school websites, but keeps everything fully static and lightweight.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-xl-3"><div class="capability-card h-100"><i class="bi bi-lightbulb"></i><h5>Critical thinking</h5><p>Students are encouraged to ask questions, reason clearly and develop confidence in problem solving.</p></div></div>
-        <div class="col-md-6 col-xl-3"><div class="capability-card h-100"><i class="bi bi-heart"></i><h5>Emotional growth</h5><p>A caring environment supports confidence, self-awareness and healthy social development.</p></div></div>
-        <div class="col-md-6 col-xl-3"><div class="capability-card h-100"><i class="bi bi-tools"></i><h5>Hands-on learning</h5><p>Activity-based tasks help children understand ideas through doing, making and exploring.</p></div></div>
-        <div class="col-md-6 col-xl-3"><div class="capability-card h-100"><i class="bi bi-rocket-takeoff"></i><h5>Innovation mindset</h5><p>Students are supported in creating, presenting and participating with initiative and curiosity.</p></div></div>
-        <div class="col-md-6 col-xl-3"><div class="capability-card h-100"><i class="bi bi-people"></i><h5>Social values</h5><p>Respect, teamwork and responsible citizenship are reinforced in daily school life.</p></div></div>
-        <div class="col-md-6 col-xl-3"><div class="capability-card h-100"><i class="bi bi-dribbble"></i><h5>Physical well-being</h5><p>Sports, yoga and movement support discipline, fitness and a balanced routine.</p></div></div>
-        <div class="col-md-6 col-xl-3"><div class="capability-card h-100"><i class="bi bi-globe2"></i><h5>Broader worldview</h5><p>Students are introduced to ideas, languages and perspectives that widen understanding.</p></div></div>
-        <div class="col-md-6 col-xl-3"><div class="capability-card h-100"><i class="bi bi-palette"></i><h5>Creative expression</h5><p>Music, art, speaking and events help students communicate with confidence and imagination.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding bg-white">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <span class="eyebrow">Academic + co-curricular strength</span>
-          <h2>A balanced curriculum for academic strength and real-world growth</h2>
-          <p class="text-muted">The school profile highlights broad learning opportunities that combine strong academic foundations with communication, reasoning, curiosity and practical exposure.</p>
-          <div class="row g-3 mt-3">
-            <div class="col-sm-6"><div class="info-pill"><i class="bi bi-check-circle-fill"></i> Computer science and digital exposure</div></div>
-            <div class="col-sm-6"><div class="info-pill"><i class="bi bi-check-circle-fill"></i> Strong early literacy and numeracy</div></div>
-            <div class="col-sm-6"><div class="info-pill"><i class="bi bi-check-circle-fill"></i> Science and discovery mindset</div></div>
-            <div class="col-sm-6"><div class="info-pill"><i class="bi bi-check-circle-fill"></i> Public speaking and confidence</div></div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="row g-4">
-            <div class="col-md-6"><div class="feature-card h-100"><div class="icon-wrap"><i class="bi bi-laptop"></i></div><h5>Computer Science</h5><p>Students are introduced to modern technology and practical computing in a structured and accessible way.</p></div></div>
-            <div class="col-md-6"><div class="feature-card h-100"><div class="icon-wrap"><i class="bi bi-book-half"></i></div><h5>Primary Foundations</h5><p>Strong literacy and numeracy help children build confidence in the early years.</p></div></div>
-            <div class="col-md-6"><div class="feature-card h-100"><div class="icon-wrap"><i class="bi bi-flask"></i></div><h5>Science &amp; Discovery</h5><p>Scientific reasoning is developed through guided observation, curiosity and classroom exploration.</p></div></div>
-            <div class="col-md-6"><div class="feature-card h-100"><div class="icon-wrap"><i class="bi bi-megaphone"></i></div><h5>Public Speaking</h5><p>Children learn to speak clearly, think confidently and present their ideas with poise.</p></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding bg-light-subtle position-relative overflow-hidden">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <div class="quote-card">
-            <span class="eyebrow">Principal's message</span>
-            <p class="fs-4 mb-3">“We aim to inspire our students to dream more, learn more, do more and become more in their journeys of life.”</p>
-            <p class="text-muted mb-0">The school vision stresses lifelong learning, self-directed growth, academic achievement, problem-solving and wise, responsible decision-making.</p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <span class="eyebrow">Supportive learning</span>
-          <h2>Equal focus on character and capability</h2>
-          <p class="text-muted">The school describes itself as a learning environment that values social-emotional development, academic growth and future-ready confidence while helping children grow into thoughtful and capable individuals.</p>
-          <div class="row g-3 mt-3">
-            <div class="col-sm-6"><div class="info-pill"><i class="bi bi-check-circle-fill"></i> Confidence, creativity and character</div></div>
-            <div class="col-sm-6"><div class="info-pill"><i class="bi bi-check-circle-fill"></i> Supportive guided environment</div></div>
-            <div class="col-sm-6"><div class="info-pill"><i class="bi bi-check-circle-fill"></i> Relevant education for the future</div></div>
-            <div class="col-sm-6"><div class="info-pill"><i class="bi bi-check-circle-fill"></i> Family-school partnership</div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding bg-white">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
-        <div>
-          <span class="eyebrow">Achievements &amp; spotlight</span>
-          <h2 class="mb-0">A stronger homepage showcase for results, recognition and student excellence</h2>
-        </div>
-        <a href="pages/gallery.html" class="btn btn-outline-dark rounded-pill">View gallery</a>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-xl-3"><article class="spotlight-card h-100"><img src="images/gallery-1.svg" alt="Academic excellence" class="img-fluid"><div class="p-4"><span class="program-tag">Academic Excellence</span><h5>Student toppers and classroom achievements</h5><p>Use this block for board results, top performers, milestones or school-wide academic recognition.</p></div></article></div>
-        <div class="col-md-6 col-xl-3"><article class="spotlight-card h-100"><img src="images/gallery-2.svg" alt="School events" class="img-fluid"><div class="p-4"><span class="program-tag">Events</span><h5>Annual day, science fair and celebrations</h5><p>A high-visibility section for the school’s most photogenic and community-building events.</p></div></article></div>
-        <div class="col-md-6 col-xl-3"><article class="spotlight-card h-100"><img src="images/gallery-3.svg" alt="Sports" class="img-fluid"><div class="p-4"><span class="program-tag">Sports</span><h5>Participation, discipline and teamwork</h5><p>Highlight sports day, inter-house participation, fitness programmes and student discipline.</p></div></article></div>
-        <div class="col-md-6 col-xl-3"><article class="spotlight-card h-100"><img src="images/gallery-4.svg" alt="Student voice" class="img-fluid"><div class="p-4"><span class="program-tag">Student Voice</span><h5>Speaking, leadership and confidence</h5><p>Ideal for debate, public speaking, assemblies and student-led school experiences.</p></div></article></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding bg-light-subtle">
-    <div class="container">
-      <div class="section-heading text-center mx-auto mb-5">
-        <span class="eyebrow">House system &amp; values</span>
-        <h2>A memorable section for student identity and school spirit</h2>
-        <p class="text-muted">Inspired by schools that make house culture visible, this static block can later be customized with your real house names, colors and competitions.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-xl-3"><div class="house-card h-100"><span class="house-mark house-red">A</span><h5>Achievers House</h5><p>Encourages discipline, excellence and strong work habits.</p></div></div>
-        <div class="col-md-6 col-xl-3"><div class="house-card h-100"><span class="house-mark house-blue">B</span><h5>Builders House</h5><p>Promotes teamwork, resilience and constructive leadership.</p></div></div>
-        <div class="col-md-6 col-xl-3"><div class="house-card h-100"><span class="house-mark house-green">C</span><h5>Creators House</h5><p>Celebrates imagination, cultural participation and innovation.</p></div></div>
-        <div class="col-md-6 col-xl-3"><div class="house-card h-100"><span class="house-mark house-gold">D</span><h5>Discoverers House</h5><p>Represents curiosity, exploration and confidence in new challenges.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding testimonial-section text-white">
-    <div class="container">
-      <div class="section-heading text-center mx-auto mb-5">
-        <span class="eyebrow text-white bg-white bg-opacity-10">Testimonials</span>
-        <h2 class="text-white">What parents and students can say</h2>
-        <p class="text-white-50">A more premium school homepage usually includes real voices from the community. This section is ready for replacement with actual parent or alumni testimonials later.</p>
-      </div>
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4200">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="testimonial-card mx-auto text-center">
-              <p class="mb-4">“The school environment feels caring, disciplined and encouraging. Our child has grown in confidence, communication and classroom participation.”</p>
-              <span>Parent testimonial placeholder</span>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="testimonial-card mx-auto text-center">
-              <p class="mb-4">“We appreciate the balance of academics, activities and values. The website now reflects that full school experience much more clearly.”</p>
-              <span>Admissions enquiry testimonial placeholder</span>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="testimonial-card mx-auto text-center">
-              <p class="mb-4">“This layout is ideal for showcasing school strengths such as events, notices, achievements, culture and parent communication on one homepage.”</p>
-              <span>Client demo testimonial placeholder</span>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex justify-content-center gap-2 mt-4">
-          <button class="btn btn-outline-light rounded-pill px-4" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">Previous</button>
-          <button class="btn btn-light rounded-pill px-4" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">Next</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding bg-white">
-    <div class="container">
-      <div class="row g-4">
+      <div class="row g-4 align-items-start">
         <div class="col-lg-4">
-          <div class="action-panel h-100">
-            <span class="eyebrow">Campus visual feature</span>
-            <h3>Virtual tour ready section</h3>
-            <p class="text-muted">Inspired by schools that prominently feature campus exploration. You can later replace this static block with a real video or 360° tour link.</p>
-            <a href="pages/gallery.html" class="btn btn-brand rounded-pill px-4">Explore gallery</a>
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img src="images/logo.png" alt="School logo" class="brand-logo">
+            <div>
+              <h5 class="mb-0">Explorer &amp; V.B.B. School</h5>
+              <p class="mb-0 text-muted-2">A thoughtfully structured, parent-friendly school website template.</p>
+            </div>
+          </div>
+          <div class="social-links d-flex gap-2 mt-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="action-panel h-100">
-            <span class="eyebrow">School publications</span>
-            <h3>Prospectus &amp; brochure showcase</h3>
-            <p class="text-muted">A brochure or downloadable PDF section can be inserted here later without changing the rest of the structure.</p>
-            <a href="pages/admissions.html" class="btn btn-outline-dark rounded-pill px-4">Admissions page</a>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="action-panel h-100">
-            <span class="eyebrow">Community section</span>
-            <h3>Alumni or parent connect</h3>
-            <p class="text-muted">This card can become a future alumni network, parent portal link or school community page when needed.</p>
-            <a href="pages/contact.html" class="btn btn-outline-dark rounded-pill px-4">Get in touch</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding bg-light-subtle">
-    <div class="container">
-      <div class="section-heading text-center mx-auto mb-5">
-        <span class="eyebrow">Logo set included</span>
-        <h2>Branding assets already integrated</h2>
-        <p class="text-muted">The uploaded logos remain integrated in the navbar, footer, favicon and visual branding, and are also showcased here for easy review during the client demo.</p>
-      </div>
-      <div class="row g-4 align-items-stretch">
-        <div class="col-md-3 col-6"><div class="gallery-card h-100 text-center"><img src="images/schoollogo-120x120.png" class="img-fluid real-logo" alt="small logo"><div class="p-3"><h6 class="mb-0">120px logo</h6></div></div></div>
-        <div class="col-md-3 col-6"><div class="gallery-card h-100 text-center"><img src="images/schoollogo_2x.png" class="img-fluid real-logo" alt="2x logo"><div class="p-3"><h6 class="mb-0">2x logo</h6></div></div></div>
-        <div class="col-md-3 col-6"><div class="gallery-card h-100 text-center"><img src="images/schoollogo_4x.png" class="img-fluid real-logo" alt="4x logo"><div class="p-3"><h6 class="mb-0">4x logo</h6></div></div></div>
-        <div class="col-md-3 col-6"><div class="gallery-card h-100 text-center"><img src="images/schoollogo_8x.png" class="img-fluid real-logo" alt="8x logo"><div class="p-3"><h6 class="mb-0">8x logo</h6></div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding bg-white">
-    <div class="container">
-      <div class="cta-panel text-center">
-        <span class="eyebrow">Ready to present this website</span>
-        <h2>Fully static, organized and deployable</h2>
-        <p class="text-muted mb-4">The site remains fully static, organized into reusable folders, and deployable on GitHub Pages without any forms backend or database.</p>
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-          <a href="pages/contact.html" class="btn btn-brand btn-lg rounded-pill px-4">Contact Information</a>
-          <a href="https://explorervbbschool.in" target="_blank" rel="noopener" class="btn btn-outline-dark btn-lg rounded-pill px-4">View Official Website</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer pt-5 pb-4">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="navbar-brand footer-brand mb-3">
-            <img src="images/logo.png" alt="V.B.B. High School logo" class="brand-logo me-2">
-            <span><strong>Explorer &amp; V.B.B.</strong><br><small>School, Sayan</small></span>
-          </div>
-          <p class="text-muted">A polished static school website based on the original structure, refreshed with a richer homepage layout for client presentation and GitHub Pages deployment.</p>
-        </div>
-        <div class="col-lg-4">
-          <h6>Quick Links</h6>
+        <div class="col-sm-6 col-lg-2">
+          <h6 class="fw-bold mb-3">Explore</h6>
           <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
             <li><a href="pages/about.html">About</a></li>
             <li><a href="pages/academics.html">Academics</a></li>
             <li><a href="pages/activities.html">Activities</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h6 class="fw-bold mb-3">Admissions</h6>
+          <ul class="footer-links">
+            <li><a href="pages/admissions.html">How to apply</a></li>
+            <li><a href="pages/news.html">Notices</a></li>
             <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="col-lg-4">
-          <h6>Contact</h6>
-          <ul class="footer-links">
-            <li>Adarsh Nagar, Behind Thakor Dwar Society, Sayan, Surat, Gujarat, India</li>
-            <li>+91 9762330236 | +91 9427472781</li>
-            <li>info@explorervbbschool.in</li>
-          </ul>
+          <h6 class="fw-bold mb-3">Visit the school</h6>
+          <p class="text-muted-2 mb-2">Adarsh Nagar, Behind Thakor Dwar Society, Sayan, Surat, Gujarat</p>
+          <p class="text-muted-2 mb-2">Phone: +91 9762330236</p>
+          <p class="text-muted-2 mb-0">Email: info@explorervbbschool.in</p>
         </div>
+      </div>
+      <div class="border-top mt-4 pt-3 d-flex flex-column flex-md-row justify-content-between small text-muted-2">
+        <span>© Explorer &amp; V.B.B. School. All rights reserved.</span>
+        <span>Static HTML • CSS • Bootstrap • JavaScript</span>
       </div>
     </div>
   </footer>
+  <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

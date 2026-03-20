@@ -1,90 +1,59 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const counters = document.querySelectorAll('.counter');
-  const animateCounter = (counter) => {
-    const target = +counter.dataset.target;
-    const increment = Math.max(1, Math.floor(target / 60));
-    let count = 0;
-    const update = () => {
-      count += increment;
-      if (count >= target) {
-        counter.textContent = target;
-      } else {
-        counter.textContent = count;
-        requestAnimationFrame(update);
-      }
-    };
-    update();
+  const nav = document.querySelector('.custom-navbar');
+  const backToTop = document.querySelector('.back-to-top');
+  const activePath = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if ((activePath === '' || activePath === 'index.html') && href === 'index.html') link.classList.add('active');
+    else if (href && href.endsWith(activePath)) link.classList.add('active');
+  });
+  const onScroll = () => {
+    if (window.scrollY > 24) nav?.classList.add('scrolled'); else nav?.classList.remove('scrolled');
+    if (window.scrollY > 320) backToTop?.classList.add('show'); else backToTop?.classList.remove('show');
   };
+  window.addEventListener('scroll', onScroll); onScroll();
+  backToTop?.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
 
-  if (counters.length) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCounter(entry.target);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.4 });
+  document.querySelectorAll('.counter').forEach(counter => {
+    const target = Number(counter.dataset.target || 0);
+    let started = false;
+    const run = () => {
+      if (started) return; started = true;
+      let val = 0; const inc = Math.max(1, Math.ceil(target / 60));
+      const tick = () => {
+        val += inc; if (val >= target) { counter.textContent = target; return; }
+        counter.textContent = val; requestAnimationFrame(tick);
+      }; tick();
+    };
+    const obs = new IntersectionObserver(entries => { if (entries[0].isIntersecting) { run(); obs.disconnect(); } }, {threshold:.35});
+    obs.observe(counter);
+  });
 
-    counters.forEach(counter => observer.observe(counter));
-  }
-
-  const backToTop = document.createElement('button');
-  backToTop.className = 'back-to-top';
-  backToTop.innerHTML = '<i class="bi bi-arrow-up"></i>';
-  backToTop.setAttribute('aria-label', 'Back to top');
-  document.body.appendChild(backToTop);
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 280) {
-      backToTop.classList.add('show');
-    } else {
-      backToTop.classList.remove('show');
+  const highlight = document.querySelector('[data-highlight-rotator]');
+  if (highlight) {
+    const items = JSON.parse(highlight.getAttribute('data-items') || '[]');
+    let idx = 0;
+    if (items.length) {
+      highlight.textContent = items[0];
+      setInterval(() => {
+        idx = (idx + 1) % items.length;
+        highlight.style.opacity = 0;
+        setTimeout(() => {
+          highlight.textContent = items[idx];
+          highlight.style.opacity = 1;
+        }, 180);
+      }, 3000);
     }
-  });
-
-  backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-
-  const yearTargets = document.querySelectorAll('[data-year]');
-  yearTargets.forEach(el => el.textContent = new Date().getFullYear());
-});
-
-
-  const heroCarouselEl = document.getElementById('schoolHeroCarousel');
-  if (heroCarouselEl && window.bootstrap && bootstrap.Carousel) {
-    const heroCarousel = bootstrap.Carousel.getOrCreateInstance(heroCarouselEl, {
-      interval: 4200,
-      ride: 'carousel',
-      touch: true,
-      pause: false,
-      wrap: true
-    });
-    heroCarousel.cycle();
   }
 
-
-// Rotating event highlight text on homepage
-(function(){
-  const target = document.getElementById('eventHighlightText');
-  if (!target) return;
-  const items = [
-    'Admissions open for the new academic session.',
-    'Annual day rehearsals and cultural showcase this month.',
-    'Science and innovation activities for curious young learners.',
-    'Parent interaction and campus visit support available this week.'
-  ];
-  let idx = 0;
-  target.classList.add('fade-in');
-  setInterval(() => {
-    target.classList.remove('fade-in');
-    target.classList.add('fade-out');
-    setTimeout(() => {
-      idx = (idx + 1) % items.length;
-      target.textContent = items[idx];
-      target.classList.remove('fade-out');
-      target.classList.add('fade-in');
-    }, 300);
-  }, 3200);
-})();
+  const hero = document.querySelector('#schoolHeroCarousel');
+  if (hero && window.bootstrap && bootstrap.Carousel) {
+    const carousel = bootstrap.Carousel.getOrCreateInstance(hero, { interval: 4200, ride: 'carousel', pause: false, touch: true, wrap: true });
+    let touchStartX = 0;
+    hero.addEventListener('touchstart', e => touchStartX = e.changedTouches[0].screenX, {passive:true});
+    hero.addEventListener('touchend', e => {
+      const diff = e.changedTouches[0].screenX - touchStartX;
+      if (Math.abs(diff) > 40) diff < 0 ? carousel.next() : carousel.prev();
+    }, {passive:true});
+  }
+});

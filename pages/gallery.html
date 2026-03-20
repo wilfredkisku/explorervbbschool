@@ -1,84 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Explorer & V.B.B. School | Gallery</title>
-  <meta name="description" content="Gallery page for Explorer & V.B.B. School" />
-  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <meta name="description" content="A polished school website template built with Bootstrap and JavaScript.">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>  <div class="topbar py-2 d-none d-lg-block">
+<body>
+
+  <div class="topbar py-2 d-none d-lg-block">
     <div class="container d-flex justify-content-between align-items-center small">
-      <div class="d-flex gap-4">
-        <span><i class="bi bi-geo-alt"></i> Adarsh Nagar, Behind Thakor Dwar Society, Sayan, Surat, Gujarat, India</span>
+      <div class="d-flex gap-4 flex-wrap">
+        <span><i class="bi bi-geo-alt"></i> Adarsh Nagar, Behind Thakor Dwar Society, Sayan, Surat, Gujarat</span>
         <span><i class="bi bi-telephone"></i> +91 9762330236</span>
         <span><i class="bi bi-envelope"></i> info@explorervbbschool.in</span>
       </div>
       <div class="d-flex gap-3">
-        <a href="../pages/admissions.html">Admissions</a>
-        <a href="../pages/contact.html">Visit Us</a>
-        <a href="https://explorervbbschool.in" target="_blank" rel="noopener">Official Site</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Visit Us</a>
+        <a href="news.html">News</a>
       </div>
     </div>
-  </div>  <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+  </div>
+  <nav class="navbar navbar-expand-lg sticky-top custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="../index.html">
-        <img src="../images/logo.png" alt="V.B.B. High School logo" class="brand-logo me-2">
-        <span>
-          <strong>Explorer &amp; V.B.B.</strong><br>
-          <small>School, Sayan</small>
-        </span>
+        <img src="../images/logo.png" alt="School logo" class="brand-logo">
+        <span><strong>Explorer &amp; V.B.B. School</strong><small>Inspiring learning every day</small></span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="../pages/about.html">About</a></li><li class="nav-item"><a class="nav-link" href="../pages/academics.html">Academics</a></li><li class="nav-item"><a class="nav-link" href="../pages/activities.html">Activities</a></li><li class="nav-item"><a class="nav-link active" href="../pages/gallery.html">Gallery</a></li><li class="nav-item"><a class="nav-link" href="../pages/admissions.html">Admissions</a></li><li class="nav-item"><a class="nav-link" href="../pages/contact.html">Contact</a></li>
-          <li class="nav-item ms-lg-2"><a class="btn btn-brand rounded-pill px-4" href="../pages/admissions.html">Enquire Now</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-brand rounded-pill px-4" href="admissions.html">Enquire Now</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <section class="page-hero section-padding-sm"><div class="container"><span class="eyebrow">Gallery</span><h1>School Gallery</h1><p class="lead text-muted">A visual-style gallery page for celebrations, campus highlights and student moments.</p></div></section>
-  <section class="section-padding bg-white"><div class="container"><div class="section-heading mb-5"><span class="eyebrow">Highlights from school life</span><h2>Moments that reflect school spirit</h2><p class="text-muted">The official site’s gallery showcases school moments such as Teachers Day. This static version presents elegant gallery cards and the uploaded logo set.</p></div><div class="row g-4"><div class="col-md-4"><div class="gallery-card"><img src="../images/gallery-1.svg" alt="Teachers Day" class="img-fluid"><div class="p-3"><h6>Teachers Day</h6><p class="mb-0 text-muted small">Celebrating educators and gratitude across the school community.</p></div></div></div><div class="col-md-4"><div class="gallery-card"><img src="../images/gallery-2.svg" alt="Student participation" class="img-fluid"><div class="p-3"><h6>Student Participation</h6><p class="mb-0 text-muted small">Snapshots of engaged learning and student participation.</p></div></div></div><div class="col-md-4"><div class="gallery-card"><img src="../images/gallery-3.svg" alt="Sports" class="img-fluid"><div class="p-3"><h6>Sports & wellness</h6><p class="mb-0 text-muted small">Physical activity, teamwork and healthy competition.</p></div></div></div><div class="col-md-4"><div class="gallery-card"><img src="../images/gallery-4.svg" alt="Culture" class="img-fluid"><div class="p-3"><h6>Cultural events</h6><p class="mb-0 text-muted small">Festivals, cultural days and themed celebrations.</p></div></div></div><div class="col-md-4"><div class="gallery-card"><img src="../images/schoollogo_4x.png" alt="School logo" class="img-fluid real-logo"><div class="p-3"><h6>School emblem</h6><p class="mb-0 text-muted small">Recognizing confidence, growth and participation.</p></div></div></div><div class="col-md-4"><div class="gallery-card"><img src="../images/schoollogo_8x.png" alt="School emblem large" class="img-fluid real-logo"><div class="p-3"><h6>Brand assets included</h6><p class="mb-0 text-muted small">A warm school atmosphere designed for learning and belonging.</p></div></div></div></div></div></section>
-  <footer class="footer pt-5 pb-4">
+
+
+<section class="page-hero"><div class="container position-relative"><span class="breadcrumb-modern">Home / Gallery</span><div class="row align-items-center g-4 mt-3"><div class="col-lg-7"><span class="eyebrow">Gallery</span><h1 class="display-title">An album-inspired photo page for campus, classroom and event moments.</h1><p class="lead-copy mt-3">The current version uses polished test images so the full website works immediately and can later be replaced with real school photos.</p></div><div class="col-lg-5"><img src="../images/gallery-5.jpg" alt="Gallery hero" class="rounded-4xl shadow-soft"></div></div></div></section>
+<section class="section-space"><div class="container"><div class="gallery-grid"><div class="gallery-card"><img src="../images/gallery-1.jpg" alt="Gallery 1"></div><div class="gallery-card"><img src="../images/gallery-2.jpg" alt="Gallery 2"></div><div class="gallery-card"><img src="../images/gallery-3.jpg" alt="Gallery 3"></div><div class="gallery-card"><img src="../images/gallery-4.jpg" alt="Gallery 4"></div><div class="gallery-card"><img src="../images/gallery-5.jpg" alt="Gallery 5"></div><div class="gallery-card"><img src="../images/gallery-6.jpg" alt="Gallery 6"></div><div class="gallery-card"><img src="../images/hero-1.jpg" alt="Gallery 7"></div><div class="gallery-card"><img src="../images/hero-2.jpg" alt="Gallery 8"></div><div class="gallery-card"><img src="../images/hero-3.jpg" alt="Gallery 9"></div></div></div></section>
+
+
+  <footer class="footer pt-5 pb-4 mt-5">
     <div class="container">
-      <div class="row g-4">
+      <div class="row g-4 align-items-start">
         <div class="col-lg-4">
-          <div class="navbar-brand footer-brand mb-3">
-            <img src="../images/logo.png" alt="V.B.B. High School logo" class="brand-logo me-2">
-            <span><strong>Explorer &amp; V.B.B.</strong><br><small>School, Sayan</small></span>
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img src="../images/logo.png" alt="School logo" class="brand-logo">
+            <div>
+              <h5 class="mb-0">Explorer &amp; V.B.B. School</h5>
+              <p class="mb-0 text-muted-2">A thoughtfully structured, parent-friendly school website template.</p>
+            </div>
           </div>
-          <p class="text-muted">A polished static school website based on the original structure, refreshed with Explorer &amp; V.B.B. School content for client presentation and GitHub Pages deployment.</p>
+          <div class="social-links d-flex gap-2 mt-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <h6>Quick Links</h6>
+        <div class="col-sm-6 col-lg-2">
+          <h6 class="fw-bold mb-3">Explore</h6>
           <ul class="footer-links">
-            <li><a href="../pages/about.html">About</a></li>
-            <li><a href="../pages/academics.html">Academics</a></li>
-            <li><a href="../pages/activities.html">Activities</a></li>
-            <li><a href="../pages/gallery.html">Gallery</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="activities.html">Activities</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h6 class="fw-bold mb-3">Admissions</h6>
+          <ul class="footer-links">
+            <li><a href="admissions.html">How to apply</a></li>
+            <li><a href="news.html">Notices</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="col-lg-4">
-          <h6>Contact</h6>
-          <ul class="footer-links">
-            <li>Adarsh Nagar, Behind Thakor Dwar Society, Sayan, Surat, Gujarat, India</li>
-            <li>+91 9762330236 | +91 9427472781</li>
-            <li>info@explorervbbschool.in</li>
-          </ul>
+          <h6 class="fw-bold mb-3">Visit the school</h6>
+          <p class="text-muted-2 mb-2">Adarsh Nagar, Behind Thakor Dwar Society, Sayan, Surat, Gujarat</p>
+          <p class="text-muted-2 mb-2">Phone: +91 9762330236</p>
+          <p class="text-muted-2 mb-0">Email: info@explorervbbschool.in</p>
         </div>
+      </div>
+      <div class="border-top mt-4 pt-3 d-flex flex-column flex-md-row justify-content-between small text-muted-2">
+        <span>© Explorer &amp; V.B.B. School. All rights reserved.</span>
+        <span>Static HTML • CSS • Bootstrap • JavaScript</span>
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/main.js"></script>
+  <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
